@@ -17,7 +17,7 @@ wordList = wordList.map(item => {
   return item.toLowerCase()
 })
 console.log(wordList.length + ' words loaded.')
-app.use(express.static('./dist'))
+app.use(express.static('./public'))
 app.get('/', function (req, res, next) {
   req.url = '/index.html'
   next()
